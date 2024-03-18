@@ -2,9 +2,9 @@ import wandb
 import openai
 import tiktoken
 import streamlit as st
-from wandb.integration.openai import autolog
+# from wandb.integration.openai import autolog
 
-autolog({"project": "gpt_latex_app", "job_type": "generation"})
+# autolog({"project": "gpt_latex_app", "job_type": "generation"})
 
 def get_completion(messages, model="gpt-3.5-turbo", temperature=0):
     response = openai.ChatCompletion.create(
