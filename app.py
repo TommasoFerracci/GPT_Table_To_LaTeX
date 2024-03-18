@@ -47,7 +47,7 @@ if uploaded_file is not None:
             if user_input == "":
                 st.stop()
             else:
-                _, is_injection = rb.detect_injection(user_input)
+                is_injection = rb.detect_injection(user_input)
 
             if is_injection:
                 st.write("It looks like you are attempting a prompt injection. Please provide only specific stylistic preferences.")
