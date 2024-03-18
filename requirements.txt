@@ -1,5 +1,5 @@
 wandb
-openai
+openai==0.9
 tiktoken
 rebuff
 streamlit.extras
